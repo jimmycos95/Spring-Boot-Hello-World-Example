@@ -20,13 +20,15 @@ class DemoApplicationTests {
 
         assertAll("personne", () -> assertEquals("Nassur", pers.getFirstName()),
                               () -> assertEquals("Moumadi", pers.getLastName()));
+	}
+	
 	@Test
         void groupedAssertions_jc() {
         Personne pers = new Personne("James", "Cossart");
 
         assertAll("personne", () -> assertEquals("James", pers.getFirstName()),
                               () -> assertEquals("Cosart", pers.getLastName()));
-    }
+    	}
 
 
 }
